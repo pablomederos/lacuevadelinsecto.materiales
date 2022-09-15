@@ -12,9 +12,9 @@
     /**
      * COMIENZA LA CREACIÓN DEL SINGLETON
      * 
-     * Un Singleton nos permite tener la misma instancia de un objeto
-     * durante toda la ejecución de nuestro programa, sin la necesidad
-     * de controlarlo de forma manual, frecuentemente.
+     * Un Singleton nos obliga a tener la misma instancia de un objeto
+     * durante toda la ejecución de nuestro programa, y previene la
+     * creación de nuevas intancias del mismo tipo.
      */
 
 
