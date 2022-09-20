@@ -1,0 +1,15 @@
+D:\Projects\Youtube\DesignPatterns\Factory Method\example1\bin\Debug\net6.0\example1.exe
+D:\Projects\Youtube\DesignPatterns\Factory Method\example1\bin\Debug\net6.0\example1.deps.json
+D:\Projects\Youtube\DesignPatterns\Factory Method\example1\bin\Debug\net6.0\example1.runtimeconfig.json
+D:\Projects\Youtube\DesignPatterns\Factory Method\example1\bin\Debug\net6.0\example1.dll
+D:\Projects\Youtube\DesignPatterns\Factory Method\example1\bin\Debug\net6.0\example1.pdb
+D:\Projects\Youtube\DesignPatterns\Factory Method\example1\obj\Debug\net6.0\example1.csproj.AssemblyReference.cache
+D:\Projects\Youtube\DesignPatterns\Factory Method\example1\obj\Debug\net6.0\example1.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Youtube\DesignPatterns\Factory Method\example1\obj\Debug\net6.0\example1.AssemblyInfoInputs.cache
+D:\Projects\Youtube\DesignPatterns\Factory Method\example1\obj\Debug\net6.0\example1.AssemblyInfo.cs
+D:\Projects\Youtube\DesignPatterns\Factory Method\example1\obj\Debug\net6.0\example1.csproj.CoreCompileInputs.cache
+D:\Projects\Youtube\DesignPatterns\Factory Method\example1\obj\Debug\net6.0\example1.dll
+D:\Projects\Youtube\DesignPatterns\Factory Method\example1\obj\Debug\net6.0\refint\example1.dll
+D:\Projects\Youtube\DesignPatterns\Factory Method\example1\obj\Debug\net6.0\example1.pdb
+D:\Projects\Youtube\DesignPatterns\Factory Method\example1\obj\Debug\net6.0\example1.genruntimeconfig.cache
+D:\Projects\Youtube\DesignPatterns\Factory Method\example1\obj\Debug\net6.0\ref\example1.dll
