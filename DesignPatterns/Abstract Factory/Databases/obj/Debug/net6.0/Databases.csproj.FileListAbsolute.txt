@@ -1,0 +1,12 @@
+D:\Projects\Youtube\DesignPatterns\Abstract Factory\Databases\bin\Debug\net6.0\Databases.deps.json
+D:\Projects\Youtube\DesignPatterns\Abstract Factory\Databases\bin\Debug\net6.0\Databases.dll
+D:\Projects\Youtube\DesignPatterns\Abstract Factory\Databases\bin\Debug\net6.0\Databases.pdb
+D:\Projects\Youtube\DesignPatterns\Abstract Factory\Databases\obj\Debug\net6.0\Databases.csproj.AssemblyReference.cache
+D:\Projects\Youtube\DesignPatterns\Abstract Factory\Databases\obj\Debug\net6.0\Databases.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Youtube\DesignPatterns\Abstract Factory\Databases\obj\Debug\net6.0\Databases.AssemblyInfoInputs.cache
+D:\Projects\Youtube\DesignPatterns\Abstract Factory\Databases\obj\Debug\net6.0\Databases.AssemblyInfo.cs
+D:\Projects\Youtube\DesignPatterns\Abstract Factory\Databases\obj\Debug\net6.0\Databases.csproj.CoreCompileInputs.cache
+D:\Projects\Youtube\DesignPatterns\Abstract Factory\Databases\obj\Debug\net6.0\Databases.dll
+D:\Projects\Youtube\DesignPatterns\Abstract Factory\Databases\obj\Debug\net6.0\refint\Databases.dll
+D:\Projects\Youtube\DesignPatterns\Abstract Factory\Databases\obj\Debug\net6.0\Databases.pdb
+D:\Projects\Youtube\DesignPatterns\Abstract Factory\Databases\obj\Debug\net6.0\ref\Databases.dll
