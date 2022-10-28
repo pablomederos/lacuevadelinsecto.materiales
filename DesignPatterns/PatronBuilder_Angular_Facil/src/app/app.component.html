@@ -1,0 +1,55 @@
+<div>
+    <div class="personas" *ngIf="personas && personas.length">
+        <strong>Persona:</strong>
+        <ul *ngFor="let persona of personas" class="persona">
+            <li>
+                <b>Nombre:</b> {{persona.nombre}}
+            </li>
+            <li>
+                <b>Apellido:</b> {{persona.apellido}}
+            </li>
+            <li *ngIf="persona.direcciones">
+                <b>Direcciones:</b>
+                <ul *ngFor="let direccion of persona.direcciones" class="direccion">
+                    <li>
+                        <b>Calle:</b> {{direccion.calle}}
+                    </li>
+                    <li>
+                        <b>Esquina:</b> {{direccion.esquina}}
+                    </li>
+                    <li>
+                        <b>Puerta:</b> {{direccion.puerta}}
+                    </li>
+                    <hr>
+                </ul>
+            </li>
+
+            <li *ngIf="persona.telefonos">
+                <b>Teléfonos:</b>
+                <ul *ngFor="let telefono of persona.telefonos" class="telefono">
+                    <li>
+                        <b>Nombre:</b> {{telefono.nombre}}
+                    </li>
+                    <li>
+                        <b>Número:</b> {{telefono.numero}}
+                    </li>
+                    <hr>
+                </ul>
+            </li>
+
+            <li *ngIf="persona.vehiculos">
+                <b>Vehículos:</b>
+                <ul *ngFor="let vehiculo of persona.vehiculos" class="vehiculo">
+                    <li>
+                        <b>Marca:</b> {{vehiculo.marca}}
+                    </li>
+                    <li>
+                        <b>Modelo:</b> {{vehiculo.modelo}}
+                    </li>
+                    <hr>
+                </ul>
+            </li>
+            <hr>
+        </ul>
+    </div>
+</div>

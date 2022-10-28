@@ -1,0 +1,25 @@
+
+.persona {
+    border: 2px solid green;
+    border-radius: 10px;
+}
+
+.direccion, .telefono, .vehiculo {
+    margin: 0 5px;
+    padding: 0 5px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.direccion {
+    border-color: blue;
+}
+
+.telefono {
+    border-color: red;
+}
+
+.vehiculo {
+    border-color: chocolate;
+}
