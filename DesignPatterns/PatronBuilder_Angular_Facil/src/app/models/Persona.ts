@@ -1,9 +1,8 @@
 import Direccion from "./Direccion";
-import IBuilder from "./IBuilder";
 import Telefono from "./Telefono";
 import Vehiculo from "./Vehiculo";
 
-export default class Persona {
+export class Persona {
 
     private _nombre: string;
     private _apellido: string;
@@ -12,9 +11,13 @@ export default class Persona {
     private _direcciones?: Set<Direccion> | undefined;
     private _telefonos?: Set<Telefono> | undefined;
 
-    private constructor(nombre: string, apellido: string) {
-        this._nombre = nombre
-        this._apellido = apellido
+    private constructor(builder: IPersonaBuilder) {
+        this._nombre = (builder as any).nombre
+        this._apellido = (builder as any).apellido
+        
+        this._direcciones = new Set((builder as any)._direcciones)
+        this._telefonos = new Set((builder as any)._telefonos)
+        this._vehiculos = new Set((builder as any)._vehiculos)
     }
 
     public get nombre(): string {
@@ -55,7 +58,7 @@ export default class Persona {
         this._telefonos = value;
     }
 
-    static Builder = class implements IBuilder {
+    static Builder = class implements IPersonaBuilder {
         
         private _nombre: string;
         private _apellido: string;
@@ -67,6 +70,31 @@ export default class Persona {
         constructor(nombre: string, apellido: string) {
             this._nombre = nombre
             this._apellido = apellido
+        }
+
+        get nombre():string 
+        {
+            return this._nombre
+        }
+
+        get apellido():string 
+        {
+            return this._apellido
+        }
+
+        get vehiculos():Set<Vehiculo> | undefined 
+        {
+            return this._vehiculos
+        }
+
+        get direcciones():Set<Direccion> | undefined
+        {
+            return this._direcciones
+        }
+
+        get telefonos():Set<Telefono> | undefined 
+        {
+            return this._telefonos
         }
 
         agregarNombre(value: string)
@@ -140,12 +168,23 @@ export default class Persona {
 
         build(): Persona 
         {
-            const persona = new Persona(this._nombre, this._apellido)
-            persona._direcciones = new Set(this._direcciones)
-            persona._telefonos = new Set(this._telefonos)
-            persona._vehiculos = new Set(this._vehiculos)
+            const persona = new Persona(this)
 
             return persona
         }
     }
+}
+
+export interface IPersonaBuilder {
+    agregarNombre(value: string): IPersonaBuilder
+
+    agregarApellido(value: string): IPersonaBuilder
+
+    agregarVehiculo(nombre: Vehiculo | string, opts?: Record<string, string>): IPersonaBuilder
+
+    agregarDireccion(calle: Direccion | string, opts?: Record<string, string>): IPersonaBuilder
+
+    agregarTelefono(numero: Telefono | string, opts?: Record<string, string>): IPersonaBuilder
+
+    build(): Persona
 }

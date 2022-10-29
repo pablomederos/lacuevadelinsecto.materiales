@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import Direccion from './models/Direccion';
-import IBuilder from './models/IBuilder';
-import Persona from './models/Persona';
+import { Persona, IPersonaBuilder } from './models/Persona';
 import Telefono from './models/Telefono';
 import Vehiculo from './models/Vehiculo';
 
@@ -14,7 +13,7 @@ export class AppComponent {
 
   personas: Persona[] = []
 
-  builder2?: IBuilder
+  builder2?: IPersonaBuilder
 
   constructor() {
 
