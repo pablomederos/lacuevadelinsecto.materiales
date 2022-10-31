@@ -54,7 +54,7 @@ public class SpawnManager : MonoBehaviour
         {
             IBuilder builder;
 
-            if(enemiesToSpawn != 0 && enemiesToSpawn %3 == 0 && i % 3 == 0)
+            if(enemiesToSpawn != 0 && enemiesToSpawn 3 == 0 && i % 3 == 0)
                 builder = Director.Builder<Enemy2Builder>()
                 .SetVelocity(6f);
             else
