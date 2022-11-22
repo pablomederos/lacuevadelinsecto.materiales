@@ -1,0 +1,12 @@
+h1, h2 {
+  font-family: Lato;
+}
+
+ul li {
+  color: blue;
+}
+
+.ol-container {
+  margin-bottom: 10px;
+  border-bottom: 1px solid black;
+}

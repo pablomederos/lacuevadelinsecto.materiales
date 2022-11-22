@@ -1,0 +1,12 @@
+{
+  "name": "typescript",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.0"
+  }
+}
