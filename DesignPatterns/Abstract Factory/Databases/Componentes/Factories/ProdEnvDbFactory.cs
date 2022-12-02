@@ -1,14 +1,9 @@
-﻿using Databases.Base;
-using Databases.Componentes.Environments.Production;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using LaCuevaDelInsecto.Databases.Base;
+using LaCuevaDelInsecto.Databases.Componentes.Environments.Production;
 
-namespace Databases.Componentes.Factories
+namespace LaCuevaDelInsecto.Databases.Componentes.Factories
 {
-    public class ProdEnvDbFactory : DbFactory
+    public class ProdEnvDbFactory : IDbFactory
     {
         public DBMongoContext CreateMongoContext() => new ProdMongoContext();
 

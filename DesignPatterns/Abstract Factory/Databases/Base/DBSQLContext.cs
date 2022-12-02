@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 
-namespace Databases.Base
+namespace LaCuevaDelInsecto.Databases.Base
 {
     public abstract class DBSQLContext
     {
@@ -24,7 +20,7 @@ namespace Databases.Base
         {
             Console.ForegroundColor = ConsoleColor.Red;
 
-            Console.WriteLine($"Conectado a SQL usando los datos {connectionString}");
+            Console.WriteLine($"Conectado a SQL usando los datos: {connectionString}");
 
             IsConnected = true;
         }

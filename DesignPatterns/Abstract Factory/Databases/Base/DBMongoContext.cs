@@ -1,5 +1,5 @@
 ﻿
-namespace Databases.Base
+namespace LaCuevaDelInsecto.Databases.Base
 {
     public abstract class DBMongoContext
     {
@@ -19,7 +19,7 @@ namespace Databases.Base
         {
             Console.ForegroundColor = ConsoleColor.Green;
 
-            Console.WriteLine($"Conectado a MongoDb usando los datos {connectionString}");
+            Console.WriteLine($"Conectado a MongoDb usando los datos: {connectionString}");
 
             IsConnected = true;
         }

@@ -1,21 +1,22 @@
-﻿using Databases.Base;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using LaCuevaDelInsecto.Databases.Base;
 
-namespace Application.App
+namespace LaCuevaDelInsecto.Application.App
 {
-    internal class ApplicationPrueba
+    internal class ApplicationTest
     {
-        public ApplicationPrueba(DbFactory factory)
+        public ApplicationTest(IDbFactory factory)
         {
             ConfigureDb(factory);
         }
 
-        private void ConfigureDb(DbFactory factory)
+        // La instancia puede crearse in situ, y no es obligatorio
+        // utilizar un argumento.
+        // Esto es solo un ejemplo.
+        private static void ConfigureDb(IDbFactory factory)
         {
+
+            // No es necesario usar las superclases, pero promueve el desacoplamiento
+            // y mayor resiliencia del software.
             DBMongoContext dBMongoContext = factory.CreateMongoContext();
 
             dBMongoContext.CreateConnection();

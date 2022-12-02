@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Home Mala Práctica Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Bienvenid@s a la cueva del insecto</h1>
+    <p>El backend de esta vista contiene solo malas prácticas.</p>
+    <p>Encuentra más información <a href="https://pablomederos.github.io/lacuevadelinsecto">en este enlace</a></p>
+
+    <ul style="list-style: none;">
+        <li>
+            <a class="text-dark" asp-area="" asp-controller="HomeMalaPractica" asp-action="Get">GET</a>
+        </li>
+        <li>
+            <a class="text-dark" asp-area="" asp-controller="HomeMalaPractica" asp-action="Save">SAVE</a>
+        </li>
+        <li>
+            <a class="text-dark" asp-area="" asp-controller="HomeMalaPractica" asp-action="Update">UPDATE</a>
+        </li>
+        <li>
+            <a class="text-dark" asp-area="" asp-controller="HomeMalaPractica" asp-action="Delete">DELETE</a>
+        </li>
+    </ul>
+
+    <span>
+        <strong>
+            @ViewData["result"] 
+        </strong>
+    </span>
+    @if (!string.IsNullOrWhiteSpace((string?)@ViewData["result"]))
+    {
+        <span>con malas prácticas de programación</span>
+    }
+
+    <hr />
+    <h5>Ver resultado en la consola de windows que genera el proyecto.</h5>
+</div>

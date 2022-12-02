@@ -1,11 +1,6 @@
-﻿using Databases.Base;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using LaCuevaDelInsecto.Databases.Base;
 
-namespace Databases.Componentes.Environments.Production
+namespace LaCuevaDelInsecto.Databases.Componentes.Environments.Production
 {
     public class ProdSQLContext: DBSQLContext
     {

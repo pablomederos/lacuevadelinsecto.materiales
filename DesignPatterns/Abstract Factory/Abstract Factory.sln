@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Databases", "Databases\Databases.csproj", "{7F402128-687B-4F41-A038-4AC9082DECA9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LaCuevaDelInsecto.AbstractFactory.Databases", "Databases\LaCuevaDelInsecto.AbstractFactory.Databases.csproj", "{7F402128-687B-4F41-A038-4AC9082DECA9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{DA2E5C3E-4864-4436-A060-2A694D842780}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LaCuevaDelInsecto.AbstractFactory.Application", "Application\LaCuevaDelInsecto.AbstractFactory.Application.csproj", "{DA2E5C3E-4864-4436-A060-2A694D842780}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

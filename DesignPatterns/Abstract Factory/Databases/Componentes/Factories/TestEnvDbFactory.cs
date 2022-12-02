@@ -1,15 +1,9 @@
-﻿using Databases.Base;
-using Databases.Componentes.Environments.Develop;
-using Databases.Componentes.Environments.Testing;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using LaCuevaDelInsecto.Databases.Base;
+using LaCuevaDelInsecto.Databases.Componentes.Environments.Testing;
 
-namespace Databases.Componentes.Factories
+namespace LaCuevaDelInsecto.Databases.Componentes.Factories
 {
-    public class TestEnvDbFactory : DbFactory
+    public class TestEnvDbFactory : IDbFactory
     {
         public DBMongoContext CreateMongoContext() => new TestMongoContext();
 
