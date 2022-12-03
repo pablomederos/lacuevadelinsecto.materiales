@@ -31,7 +31,7 @@ namespace LaCuevaDelInsecto.Bridge.DBServices.MalaPractica
             //...
         }
 
-        public static void Update(Persona persona)
+        public void Update(Persona persona)
         {
 
             // Validaciones del modelo

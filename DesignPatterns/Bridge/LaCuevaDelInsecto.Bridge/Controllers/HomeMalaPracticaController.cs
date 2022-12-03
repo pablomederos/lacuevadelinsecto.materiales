@@ -42,7 +42,7 @@ namespace LaCuevaDelInsecto.Bridge.Controllers
 
         public IActionResult Update()
         {
-            new PostgresPersonaService.Update(new Persona
+            new PostgresPersonaService().Update(new Persona
             {
                 idPersona = 1,
                 Nombre = "Gabriel",
