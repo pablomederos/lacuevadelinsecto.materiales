@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundColor="{ DynamicResource Primary }"
+             xmlns:models="clr-namespace:LaCuevaDelInsecto.Models"
+             x:Class="LaCuevaDelInsecto.Views.AboutPage">
+    <ContentPage.BindingContext>
+        <models:About />
+    </ContentPage.BindingContext>
+    <Frame CornerRadius="10" 
+            Margin="5"
+            IsClippedToBounds="True"
+            HeightRequest="200"
+            BackgroundColor="{ DynamicResource Secondary }"
+            Padding="0">
+        <VerticalStackLayout
+            Spacing="20"
+            Padding="10"
+            VerticalOptions="Center"
+            >
+            <HorizontalStackLayout Spacing="10">
+                <Image Source="logo_lcdi"
+                       SemanticProperties.Description="Enlace a la web de LaCuevaDelInsecto"
+                       HeightRequest="64" />
+                <VerticalStackLayout Spacing="10">
+                    <Label FontSize="18" FontAttributes="Bold" Text="{Binding Title}" />
+                    <Label FontSize="22" Text="{Binding Version}" HorizontalTextAlignment="End"/>
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
+
+            <Label Text="{Binding Message}" HorizontalTextAlignment="Center" TextType="Html"/>
+            <Button Text="Ir a la web..." Clicked="LearnMore_Clicked" />
+        </VerticalStackLayout>
+    </Frame>
+
+</ContentPage>

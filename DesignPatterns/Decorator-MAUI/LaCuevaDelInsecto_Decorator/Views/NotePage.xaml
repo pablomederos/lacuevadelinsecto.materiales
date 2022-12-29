@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LaCuevaDelInsecto.Views.NotePage"
+             Title="Note Page">
+    <VerticalStackLayout Margin="5" Spacing="10">
+        <Editor HeightRequest="400" Placeholder="Ingrese aquí su nota..."
+                AutoSize="TextChanges"
+                BackgroundColor="LightGrey"
+                x:Name="TextEditor" Text="{ Binding Text }"/>
+        <HorizontalStackLayout Spacing="10" Margin="5" HorizontalOptions="Center">
+            <Label Text="Compress file:" FontSize="18"/>
+            <CheckBox IsChecked="{ Binding IsCompressed }" CheckedChanged="isCompressedCheckbox_OnCheckedChanged"/>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout Spacing="10" Margin="5" HorizontalOptions="Center">
+            <Label Text="Encrypt file:" FontSize="18"/>
+            <CheckBox IsChecked="{ Binding IsEncrypted }" CheckedChanged="isEncryptedCheckbox_OnCheckedChanged"/>
+        </HorizontalStackLayout>
+        <Grid ColumnDefinitions="*,*" ColumnSpacing="4">
+            <Button Text="Save" Clicked="SaveButton_Clicked"/>
+            <Button x:Name="DeleteButton" IsEnabled="False" Text="Delete" Grid.Column="1" Clicked="DeleteButton_Clicked"/>
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>
+
