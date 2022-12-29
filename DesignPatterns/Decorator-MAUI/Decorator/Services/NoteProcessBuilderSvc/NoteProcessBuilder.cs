@@ -1,23 +1,21 @@
-﻿using System;
-using LaCuevaDelInsecto.ConcreteDecorator.Models;
-using LaCuevaDelInsecto.Services.FileSaverBuilderSvc.Models;
+﻿using LaCuevaDelInsecto.Services.NoteProcessBuilderSvc.Models;
 
-namespace LaCuevaDelInsecto.Services.FileSaverBuilderSvc
+namespace LaCuevaDelInsecto.Services.NoteProcessBuilderSvc
 {
-    public class FileSaverBuilder
+    public class NoteProcessBuilder
     {
 		private readonly List<Type> FileSaverLayers = new ();
 
-		public FileSaverBuilder()
+		public NoteProcessBuilder()
 		{}
 
-		public FileSaverBuilder AddCompression()
+		public NoteProcessBuilder AddCompression()
 		{
 			FileSaverLayers.Add(typeof(NoteCompressorProcess));
 			return this;
 		}
 
-        public FileSaverBuilder AddEncryption()
+        public NoteProcessBuilder AddEncryption()
         {
             FileSaverLayers.Add(typeof(NoteEncryptionProcess ));
             return this;
@@ -37,16 +35,16 @@ namespace LaCuevaDelInsecto.Services.FileSaverBuilderSvc
 			return fileSaver;
 		}
 
-        public INoteProcess BuildedFileSaver(string filePath)
+        public INoteProcess GetBuildedNoteProcess(string filePath)
         {
 			if (!string.IsNullOrWhiteSpace(filePath))
 			{
 
-				List<FileSaverBuilderTaskHelper> taskList = new();
+				List<NoteProcessBuilderTaskHelper> taskList = new();
 
                 int compressedPosition = filePath.IndexOf(".gz");
                 if (compressedPosition >= 0)
-                    taskList.Add(new FileSaverBuilderTaskHelper
+                    taskList.Add(new NoteProcessBuilderTaskHelper
                     {
                         Position = compressedPosition,
                         TaskToAdd = AddCompression
@@ -54,7 +52,7 @@ namespace LaCuevaDelInsecto.Services.FileSaverBuilderSvc
 
                 int encryptPosition = filePath.IndexOf(".pgp");
                 if (encryptPosition >= 0)
-                    taskList.Add(new FileSaverBuilderTaskHelper
+                    taskList.Add(new NoteProcessBuilderTaskHelper
                     {
                         Position = encryptPosition,
                         TaskToAdd = AddEncryption

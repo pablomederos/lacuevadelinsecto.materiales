@@ -7,14 +7,15 @@
         <Editor HeightRequest="400" Placeholder="Ingrese aquí su nota..."
                 AutoSize="TextChanges"
                 BackgroundColor="LightGrey"
+                TextColor="Black"
                 x:Name="TextEditor" Text="{ Binding Text }"/>
         <HorizontalStackLayout Spacing="10" Margin="5" HorizontalOptions="Center">
             <Label Text="Compress file:" FontSize="18"/>
-            <CheckBox IsChecked="{ Binding IsCompressed }" CheckedChanged="isCompressedCheckbox_OnCheckedChanged"/>
+            <CheckBox IsChecked="{ Binding IsCompressed }" CheckedChanged="IsCompressedCheckbox_OnCheckedChanged"/>
         </HorizontalStackLayout>
         <HorizontalStackLayout Spacing="10" Margin="5" HorizontalOptions="Center">
             <Label Text="Encrypt file:" FontSize="18"/>
-            <CheckBox IsChecked="{ Binding IsEncrypted }" CheckedChanged="isEncryptedCheckbox_OnCheckedChanged"/>
+            <CheckBox IsChecked="{ Binding IsEncrypted }" CheckedChanged="IsEncryptedCheckbox_OnCheckedChanged"/>
         </HorizontalStackLayout>
         <Grid ColumnDefinitions="*,*" ColumnSpacing="4">
             <Button Text="Save" Clicked="SaveButton_Clicked"/>

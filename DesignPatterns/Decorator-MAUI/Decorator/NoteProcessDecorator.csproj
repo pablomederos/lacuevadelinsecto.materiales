@@ -27,9 +27,7 @@
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="ConcreteDecorators\" />
-	  <Folder Include="Services\" />
 	  <Folder Include="Services\FileNotesLoaderSvc\Models\" />
-	  <Folder Include="Services\FileSaverBuilderSvc\Models\" />
 	  <Folder Include="ConcreteDecorators\Models\" />
 	</ItemGroup>
 </Project>

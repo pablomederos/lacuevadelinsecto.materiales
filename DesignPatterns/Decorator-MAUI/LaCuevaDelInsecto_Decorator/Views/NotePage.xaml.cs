@@ -1,7 +1,6 @@
 ﻿using LaCuevaDelInsecto.Models;
 using LaCuevaDelInsecto.ConcreteDecorator.Models;
-using LaCuevaDelInsecto.Services.FileSaverBuilderSvc;
-using LaCuevaDelInsecto.Services.FileSaverBuilderSvc.Models;
+using LaCuevaDelInsecto.Services.NoteProcessBuilderSvc;
 
 namespace LaCuevaDelInsecto.Views;
 
@@ -13,11 +12,11 @@ public partial class NotePage : ContentPage
         set { LoadNote(value); }
     }
 
-    private readonly FileSaverBuilder _fileSaverBuilder;
+    private readonly NoteProcessBuilder _noteProcessBuilder;
 
     public NotePage()
     {
-        _fileSaverBuilder = new FileSaverBuilder(); // No necesito romper este acomplamiento
+        _noteProcessBuilder = new NoteProcessBuilder(); // No necesito romper este acomplamiento
 
         LoadNote();
 
@@ -26,13 +25,13 @@ public partial class NotePage : ContentPage
 
     void LoadNote(string filePath = "")
     {
-        FileProcessNote noteContent = _fileSaverBuilder
-                .BuildedFileSaver(filePath).LoadNote(filePath);
+        FileProcessNote noteContent = _noteProcessBuilder
+                .GetBuildedNoteProcess(filePath).LoadNote(filePath);
 
         if (!string.IsNullOrWhiteSpace(filePath))
             DeleteButton.IsEnabled = true;
 
-        Models.Note note = new Models.Note
+        Note note = new()
         {
             FilePath = noteContent?.FilePath ?? "",
             Text = noteContent?.Text ?? "",
@@ -43,7 +42,7 @@ public partial class NotePage : ContentPage
         BindingContext = note;
     }
 
-    async void SaveButton_Clicked(System.Object sender, System.EventArgs e)
+    async void SaveButton_Clicked(object sender, EventArgs e)
     {
         if (BindingContext is Note note)
         {
@@ -57,9 +56,8 @@ public partial class NotePage : ContentPage
                 IsEncrypted = note.IsEncrypted,
                 IsCompressed = note.IsCompressed
             };
-
-            string filePath = note.FilePath;
-            var fileSaverBuilder = _fileSaverBuilder;
+            
+            var fileSaverBuilder = _noteProcessBuilder;
 
             if (note.IsCompressed)
                 fileSaverBuilder.AddCompression();
@@ -72,24 +70,24 @@ public partial class NotePage : ContentPage
         await Shell.Current.GoToAsync("..");
     }
 
-    void DeleteButton_Clicked(System.Object sender, System.EventArgs e)
+    void DeleteButton_Clicked(object sender, EventArgs e)
     {
         if(BindingContext is Note note)
         {
             if (string.IsNullOrWhiteSpace(note.FilePath))
                 return;
 
-            _fileSaverBuilder.Build().DeleteNote(note.FilePath);
+            _noteProcessBuilder.Build().DeleteNote(note.FilePath);
         }
 
         Shell.Current.GoToAsync("..");
     }
 
-    void isCompressedCheckbox_OnCheckedChanged(System.Object sender, Microsoft.Maui.Controls.CheckedChangedEventArgs e)
+    void IsCompressedCheckbox_OnCheckedChanged(object sender, CheckedChangedEventArgs e)
     {
         ((Note) BindingContext).IsCompressed = e.Value;
     }
-    void isEncryptedCheckbox_OnCheckedChanged(System.Object sender, Microsoft.Maui.Controls.CheckedChangedEventArgs e)
+    void IsEncryptedCheckbox_OnCheckedChanged(object sender, CheckedChangedEventArgs e)
     {
         ((Note)BindingContext).IsEncrypted = e.Value;
     }
