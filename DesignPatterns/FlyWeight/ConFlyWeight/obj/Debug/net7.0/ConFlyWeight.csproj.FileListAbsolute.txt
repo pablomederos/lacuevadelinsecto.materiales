@@ -1,0 +1,15 @@
+D:\Projects\Youtube\DesignPatterns\FlyWeight\ConFlyWeight\bin\Debug\net7.0\ConFlyWeight.exe
+D:\Projects\Youtube\DesignPatterns\FlyWeight\ConFlyWeight\bin\Debug\net7.0\ConFlyWeight.deps.json
+D:\Projects\Youtube\DesignPatterns\FlyWeight\ConFlyWeight\bin\Debug\net7.0\ConFlyWeight.runtimeconfig.json
+D:\Projects\Youtube\DesignPatterns\FlyWeight\ConFlyWeight\bin\Debug\net7.0\ConFlyWeight.dll
+D:\Projects\Youtube\DesignPatterns\FlyWeight\ConFlyWeight\bin\Debug\net7.0\ConFlyWeight.pdb
+D:\Projects\Youtube\DesignPatterns\FlyWeight\ConFlyWeight\obj\Debug\net7.0\ConFlyWeight.csproj.AssemblyReference.cache
+D:\Projects\Youtube\DesignPatterns\FlyWeight\ConFlyWeight\obj\Debug\net7.0\ConFlyWeight.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Youtube\DesignPatterns\FlyWeight\ConFlyWeight\obj\Debug\net7.0\ConFlyWeight.AssemblyInfoInputs.cache
+D:\Projects\Youtube\DesignPatterns\FlyWeight\ConFlyWeight\obj\Debug\net7.0\ConFlyWeight.AssemblyInfo.cs
+D:\Projects\Youtube\DesignPatterns\FlyWeight\ConFlyWeight\obj\Debug\net7.0\ConFlyWeight.csproj.CoreCompileInputs.cache
+D:\Projects\Youtube\DesignPatterns\FlyWeight\ConFlyWeight\obj\Debug\net7.0\ConFlyWeight.dll
+D:\Projects\Youtube\DesignPatterns\FlyWeight\ConFlyWeight\obj\Debug\net7.0\refint\ConFlyWeight.dll
+D:\Projects\Youtube\DesignPatterns\FlyWeight\ConFlyWeight\obj\Debug\net7.0\ConFlyWeight.pdb
+D:\Projects\Youtube\DesignPatterns\FlyWeight\ConFlyWeight\obj\Debug\net7.0\ConFlyWeight.genruntimeconfig.cache
+D:\Projects\Youtube\DesignPatterns\FlyWeight\ConFlyWeight\obj\Debug\net7.0\ref\ConFlyWeight.dll

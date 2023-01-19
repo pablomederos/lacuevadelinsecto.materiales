@@ -1,0 +1,15 @@
+D:\Projects\Youtube\DesignPatterns\FlyWeight\Ejemplo1\bin\Debug\net7.0\Ejemplo1.exe
+D:\Projects\Youtube\DesignPatterns\FlyWeight\Ejemplo1\bin\Debug\net7.0\Ejemplo1.deps.json
+D:\Projects\Youtube\DesignPatterns\FlyWeight\Ejemplo1\bin\Debug\net7.0\Ejemplo1.runtimeconfig.json
+D:\Projects\Youtube\DesignPatterns\FlyWeight\Ejemplo1\bin\Debug\net7.0\Ejemplo1.dll
+D:\Projects\Youtube\DesignPatterns\FlyWeight\Ejemplo1\bin\Debug\net7.0\Ejemplo1.pdb
+D:\Projects\Youtube\DesignPatterns\FlyWeight\Ejemplo1\obj\Debug\net7.0\Ejemplo1.csproj.AssemblyReference.cache
+D:\Projects\Youtube\DesignPatterns\FlyWeight\Ejemplo1\obj\Debug\net7.0\Ejemplo1.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Youtube\DesignPatterns\FlyWeight\Ejemplo1\obj\Debug\net7.0\Ejemplo1.AssemblyInfoInputs.cache
+D:\Projects\Youtube\DesignPatterns\FlyWeight\Ejemplo1\obj\Debug\net7.0\Ejemplo1.AssemblyInfo.cs
+D:\Projects\Youtube\DesignPatterns\FlyWeight\Ejemplo1\obj\Debug\net7.0\Ejemplo1.csproj.CoreCompileInputs.cache
+D:\Projects\Youtube\DesignPatterns\FlyWeight\Ejemplo1\obj\Debug\net7.0\Ejemplo1.dll
+D:\Projects\Youtube\DesignPatterns\FlyWeight\Ejemplo1\obj\Debug\net7.0\refint\Ejemplo1.dll
+D:\Projects\Youtube\DesignPatterns\FlyWeight\Ejemplo1\obj\Debug\net7.0\Ejemplo1.pdb
+D:\Projects\Youtube\DesignPatterns\FlyWeight\Ejemplo1\obj\Debug\net7.0\Ejemplo1.genruntimeconfig.cache
+D:\Projects\Youtube\DesignPatterns\FlyWeight\Ejemplo1\obj\Debug\net7.0\ref\Ejemplo1.dll

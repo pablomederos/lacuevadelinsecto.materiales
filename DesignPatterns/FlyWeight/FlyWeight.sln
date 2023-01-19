@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SinFlyWeight", "Ejemplo1\SinFlyWeight.csproj", "{183598B8-5D2B-4A0E-A899-50A263F1E539}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConFlyWeight", "ConFlyWeight\ConFlyWeight.csproj", "{EC48367C-2B62-44AD-B02E-33842363B1D9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{183598B8-5D2B-4A0E-A899-50A263F1E539}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{183598B8-5D2B-4A0E-A899-50A263F1E539}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{183598B8-5D2B-4A0E-A899-50A263F1E539}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{183598B8-5D2B-4A0E-A899-50A263F1E539}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC48367C-2B62-44AD-B02E-33842363B1D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC48367C-2B62-44AD-B02E-33842363B1D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC48367C-2B62-44AD-B02E-33842363B1D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC48367C-2B62-44AD-B02E-33842363B1D9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D73B5BC0-65AA-49D6-9F6D-B5D29132BFC0}
+	EndGlobalSection
+EndGlobal
