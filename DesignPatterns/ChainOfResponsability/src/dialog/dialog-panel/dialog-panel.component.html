@@ -1,0 +1,8 @@
+<div class="panel-wrapper">
+    <p terms>Esto son los términos de la app. ¿los aceptas?.</p>
+    <div class="checkbox-container">
+        <input type="checkbox" id="accept" [(ngModel)]="termsAccepted">
+        <label for="accept">Accept</label>
+    </div>
+    <app-dialog-button [disabled]="!termsAccepted" />
+</div>

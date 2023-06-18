@@ -1,0 +1,32 @@
+.dialog-wrapper {
+    background-color: white;
+    height: calc(100% - 2em);
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    user-select: none;
+}
+
+.dialog-title::after {
+    display: block;
+    content: "";
+    border-bottom: 1px solid #ccc;
+    margin: 1em 0;
+}
+
+.dialog-content {
+    position: relative;
+    height: inherit;
+}
+
+app-dialog-panel {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    height: inherit;
+}
+
+app-dialog-panel p {
+    display: inline-block;
+    flex-wrap: wrap;
+}

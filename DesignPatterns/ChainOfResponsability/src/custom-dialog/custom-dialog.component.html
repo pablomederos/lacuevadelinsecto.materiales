@@ -1,0 +1,11 @@
+<section class="dialog-error__wrapper">
+    <div class="dialog-error__header">
+        <h2 class="dialog-error__title">{{ title }}</h2>
+    </div>
+    <div class="dialog-error__body">
+        <p class="dialog-error__message">{{ message }}</p>
+    </div>
+    <div class="dialog-error__footer">
+        <input type="button" value="Close" class="dialog-error__button" (click)="closeDialog()" [attr.data-error]="title?.toLocaleLowerCase() === 'error'">
+    </div>
+</section>

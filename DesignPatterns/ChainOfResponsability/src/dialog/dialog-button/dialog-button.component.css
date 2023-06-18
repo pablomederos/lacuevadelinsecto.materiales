@@ -1,0 +1,25 @@
+.accept-btn {
+    border: 1px solid #1976d2;
+    background-color: #1976d2;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+}
+
+.accept-btn:hover {
+    box-shadow: 0 1px 5px #1976d2;
+}
+
+.accept-btn:active {
+    box-shadow: active 0 1px 5px #1976d2;
+}
+
+.accept-btn:disabled {
+    background-color: #9f9f9f;
+    border-color: #878787;
+    cursor: not-allowed;
+    box-shadow: none;
+}

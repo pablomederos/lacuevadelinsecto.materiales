@@ -1,0 +1,38 @@
+.dialog-error__wrapper {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+.dialog-error__body {
+    width: inherit;
+}
+
+.dialog-error__header {
+    width: 90%;
+    width: -webkit-fill-available;
+    margin: 0 1em;
+}
+
+.dialog-error__button {
+    padding: 5px 7px;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: rgb(217, 8, 8);
+    border: 2px solid rgb(178, 5, 5);
+}
+
+.dialog-error__button:hover {
+    box-shadow: 0 0 5px 0px rgb(74, 74, 74);
+}
+
+.dialog-error__button[data-error="false"] {
+    background-color: rgb(66 157 92);
+    border: 2px solid rgb(14 151 43);
+}
