@@ -17,9 +17,9 @@ También hay una página (Github Pages) donde pueden encontrar este contenido un
 #### Patrones Creacionales
 
 + [Abstract Factory](./DesignPatterns/Abstract%20Factory) ➡️ [Video](https://youtu.be/D1zQKh973dg)
-+ [Singleton](./DesignPatterns/Singleton) ➡️ [Video]()
++ [Singleton](./DesignPatterns/Singleton) ➡️ [Video](https://youtube.com/shorts/OYyZS5dmxN0?feature=share)
 + **Factory Method**
-	+ [FactoryMethod 1](./DesignPatterns/Factory%20Method) ➡️ [Video]()
+	+ [FactoryMethod 1](./DesignPatterns/Factory%20Method) ➡️ [Video](https://youtu.be/bJFKstswEKk)
 	+ [FactoryMethod 2](./DesignPatterns/Factory_Method%2BSingleton%2BVue) ➡️ [Video](https://youtu.be/5T5niY82w9Y)
 + **Builder**
 	+ [Builder 1](./DesignPatterns/PatronBuilder_Angular_Facil) ➡️ [Video](https://youtu.be/gC_213EKEAk)
